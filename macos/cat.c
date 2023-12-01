@@ -13,7 +13,12 @@ int main(int argc, char* argv[]) {
     char* filepath = argv[1];
     //annoying that juss putting 'r' dosnt work some reason causes seg fault
     const char option = 'r';
+    
     FILE *fp = fopen(filepath, &option);
+    if (!fp) {
+        printf("please provide a valid path");
+        return -1;
+    }
     //weird sys structure macos problems
     struct stat st;
     //file no juss gets the file number links to file descriptor
