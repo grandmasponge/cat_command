@@ -1,0 +1,3 @@
+/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles/cat_command.dir
+/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles/edit_cache.dir
+/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles/rebuild_cache.dir
