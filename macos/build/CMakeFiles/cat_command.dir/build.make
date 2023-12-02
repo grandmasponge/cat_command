@@ -69,29 +69,30 @@ include CMakeFiles/cat_command.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cat_command.dir/flags.make
 
-CMakeFiles/cat_command.dir/cat.c.o: CMakeFiles/cat_command.dir/flags.make
-CMakeFiles/cat_command.dir/cat.c.o: /Users/tobyreay/Documents/projects/c_projects/cat/macos/cat.c
-CMakeFiles/cat_command.dir/cat.c.o: CMakeFiles/cat_command.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cat_command.dir/cat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_command.dir/cat.c.o -MF CMakeFiles/cat_command.dir/cat.c.o.d -o CMakeFiles/cat_command.dir/cat.c.o -c /Users/tobyreay/Documents/projects/c_projects/cat/macos/cat.c
+CMakeFiles/cat_command.dir/src/cat.c.o: CMakeFiles/cat_command.dir/flags.make
+CMakeFiles/cat_command.dir/src/cat.c.o: /Users/tobyreay/Documents/projects/c_projects/cat/macos/src/cat.c
+CMakeFiles/cat_command.dir/src/cat.c.o: CMakeFiles/cat_command.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cat_command.dir/src/cat.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cat_command.dir/src/cat.c.o -MF CMakeFiles/cat_command.dir/src/cat.c.o.d -o CMakeFiles/cat_command.dir/src/cat.c.o -c /Users/tobyreay/Documents/projects/c_projects/cat/macos/src/cat.c
 
-CMakeFiles/cat_command.dir/cat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cat_command.dir/cat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tobyreay/Documents/projects/c_projects/cat/macos/cat.c > CMakeFiles/cat_command.dir/cat.c.i
+CMakeFiles/cat_command.dir/src/cat.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/cat_command.dir/src/cat.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/tobyreay/Documents/projects/c_projects/cat/macos/src/cat.c > CMakeFiles/cat_command.dir/src/cat.c.i
 
-CMakeFiles/cat_command.dir/cat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cat_command.dir/cat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tobyreay/Documents/projects/c_projects/cat/macos/cat.c -o CMakeFiles/cat_command.dir/cat.c.s
+CMakeFiles/cat_command.dir/src/cat.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cat_command.dir/src/cat.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/tobyreay/Documents/projects/c_projects/cat/macos/src/cat.c -o CMakeFiles/cat_command.dir/src/cat.c.s
 
 # Object files for target cat_command
 cat_command_OBJECTS = \
-"CMakeFiles/cat_command.dir/cat.c.o"
+"CMakeFiles/cat_command.dir/src/cat.c.o"
 
 # External object files for target cat_command
 cat_command_EXTERNAL_OBJECTS =
 
-cat_command: CMakeFiles/cat_command.dir/cat.c.o
+cat_command: CMakeFiles/cat_command.dir/src/cat.c.o
 cat_command: CMakeFiles/cat_command.dir/build.make
+cat_command: /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/lib/libcurses.tbd
 cat_command: CMakeFiles/cat_command.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cat_command"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cat_command.dir/link.txt --verbose=$(VERBOSE)

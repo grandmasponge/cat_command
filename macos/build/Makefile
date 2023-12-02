@@ -129,29 +129,29 @@ cat_command/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/build
 .PHONY : cat_command/fast
 
-cat.o: cat.c.o
-.PHONY : cat.o
+src/cat.o: src/cat.c.o
+.PHONY : src/cat.o
 
 # target to build an object file
-cat.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/cat.c.o
-.PHONY : cat.c.o
+src/cat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/cat.c.o
+.PHONY : src/cat.c.o
 
-cat.i: cat.c.i
-.PHONY : cat.i
+src/cat.i: src/cat.c.i
+.PHONY : src/cat.i
 
 # target to preprocess a source file
-cat.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/cat.c.i
-.PHONY : cat.c.i
+src/cat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/cat.c.i
+.PHONY : src/cat.c.i
 
-cat.s: cat.c.s
-.PHONY : cat.s
+src/cat.s: src/cat.c.s
+.PHONY : src/cat.s
 
 # target to generate assembly for a file
-cat.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/cat.c.s
-.PHONY : cat.c.s
+src/cat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/cat.c.s
+.PHONY : src/cat.c.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cat_command"
-	@echo "... cat.o"
-	@echo "... cat.i"
-	@echo "... cat.s"
+	@echo "... src/cat.o"
+	@echo "... src/cat.i"
+	@echo "... src/cat.s"
 .PHONY : help
 
 

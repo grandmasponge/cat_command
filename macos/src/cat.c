@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/stat.h>
+#include<ncurses.h>
+#include<syntax.h>
+
 
 
 int main(int argc, char* argv[]) {
@@ -29,18 +32,28 @@ int main(int argc, char* argv[]) {
     //fread simple
     int eof = fread(buffer, sizeof(char), filesize, fp);
     //for loop 
-    for (int i = 0; i < filesize; i++)
+
+    //using the eof should therotically fix the buffer issue
+    for (int i = 0; i < eof; i++)
     {
         //checks for eof terminator token
         if (buffer[i] == '\0')
         {
             break;
         }
-        printf("%c", buffer[i]);
+        
     }
     //fclose if you dont do this the file descriptor stays active
     //even after the program closes
     fclose(fp);
+
+    
+
+    WINDOW* src = initscr();
+    raw();
+    keypad(src, TRUE);
+    noecho();
+    endwin();
 
     //exit
     return 0;
