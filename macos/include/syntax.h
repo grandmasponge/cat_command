@@ -15,7 +15,8 @@ typedef enum _FILETYPE {
     csharp = 3,
     html = 4,
     jsts = 5,
-    java = 6
+    java = 6,
+    other = 7,
 }filetype;
 
 

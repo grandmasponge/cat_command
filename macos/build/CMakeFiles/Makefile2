@@ -81,12 +81,12 @@ clean: CMakeFiles/cat_command.dir/clean
 CMakeFiles/cat_command.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles --progress-num=1,2 "Built target cat_command"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles --progress-num=1,2,3 "Built target cat_command"
 .PHONY : CMakeFiles/cat_command.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cat_command.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cat_command.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tobyreay/Documents/projects/c_projects/cat/macos/build/CMakeFiles 0
 .PHONY : CMakeFiles/cat_command.dir/rule

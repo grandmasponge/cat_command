@@ -13,7 +13,10 @@ find_package(Curses REQUIRED)
 
 include_directories(${CURSES_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_executable(cat_command ${CMAKE_CURRENT_SOURCE_DIR}/src/cat.c)
+file(GLOB SOURCES "src/*.c")
+
+add_executable(cat_command ${SOURCES})
+
 target_link_libraries(cat_command ${CURSES_LIBRARY})
 
 

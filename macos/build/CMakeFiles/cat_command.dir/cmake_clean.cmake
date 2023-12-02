@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cat_command.dir/src/cat.c.o"
   "CMakeFiles/cat_command.dir/src/cat.c.o.d"
+  "CMakeFiles/cat_command.dir/src/syntax.c.o"
+  "CMakeFiles/cat_command.dir/src/syntax.c.o.d"
   "cat_command"
   "cat_command.pdb"
 )

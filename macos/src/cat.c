@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<sys/stat.h>
 #include<ncurses.h>
-#include<syntax.h>
+#include"../include/syntax.h"
 
 
 
@@ -33,28 +34,14 @@ int main(int argc, char* argv[]) {
     int eof = fread(buffer, sizeof(char), filesize, fp);
     //for loop 
 
-    //using the eof should therotically fix the buffer issue
-    for (int i = 0; i < eof; i++)
-    {
-        //checks for eof terminator token
-        if (buffer[i] == '\0')
-        {
-            break;
-        }
-        
-    }
+    char* text = malloc(sizeof(buffer));
+    strcpy(text, buffer);
     //fclose if you dont do this the file descriptor stays active
     //even after the program closes
     fclose(fp);
 
-    
-
-    WINDOW* src = initscr();
-    raw();
-    keypad(src, TRUE);
-    noecho();
-    endwin();
-
+    filetype type = checkFileType(filepath);
+    free(text);
     //exit
     return 0;
 }

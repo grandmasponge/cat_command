@@ -153,6 +153,30 @@ src/cat.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/cat.c.s
 .PHONY : src/cat.c.s
 
+src/syntax.o: src/syntax.c.o
+.PHONY : src/syntax.o
+
+# target to build an object file
+src/syntax.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/syntax.c.o
+.PHONY : src/syntax.c.o
+
+src/syntax.i: src/syntax.c.i
+.PHONY : src/syntax.i
+
+# target to preprocess a source file
+src/syntax.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/syntax.c.i
+.PHONY : src/syntax.c.i
+
+src/syntax.s: src/syntax.c.s
+.PHONY : src/syntax.s
+
+# target to generate assembly for a file
+src/syntax.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cat_command.dir/build.make CMakeFiles/cat_command.dir/src/syntax.c.s
+.PHONY : src/syntax.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/cat.o"
 	@echo "... src/cat.i"
 	@echo "... src/cat.s"
+	@echo "... src/syntax.o"
+	@echo "... src/syntax.i"
+	@echo "... src/syntax.s"
 .PHONY : help
 
 
