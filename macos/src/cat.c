@@ -41,6 +41,7 @@ int main(int argc, char* argv[]) {
     fclose(fp);
 
     filetype type = checkFileType(filepath);
+    rustlang(text);
     free(text);
     //exit
     return 0;

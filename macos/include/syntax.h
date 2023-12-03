@@ -26,7 +26,7 @@ filetype checkFileType(char* path);
 
 // syntax highlighting functions
 
-void rustlang(filetype type);
+void rustlang(char* text);
 
 void clang(filetype type);
 
